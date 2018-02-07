@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "TETRIS";
+    src:url("TETRIS.eot?#") format("eot"), 
+    	url("TETRIS.woff") format("woff"), 
+    	url("TETRIS.ttf") format("truetype");
+}
+html,body,a,div,input,textarea,ul, li, ol, h1, h2, h3, h4, h5, h6, span, p  {
+	font-family: "TETRIS";
+	font-size:18px;
+}
+
+.tetris{
+    display: flex;
+    flex-direction: row;
+    width: 520px;
+    text-align: center;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+.tetris #info{
+    width: 200px;
+    background-color: #f5f0e4;
+    border: 1px solid #0d9b83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tetris #info .help,
+.tetris #info .score {
+    height: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.tetris #info .help {
+    align-items:flex-start
+}
+.tetris #info .help div{
+    margin-bottom: 10px;
+}
+.tetris #info .help div:nth-child(1) img {
+    transform: rotate(90deg)
+}
+.tetris #info .help div:nth-child(2) img {
+    transform: rotate(270deg)
+}
+.tetris #info .help div:nth-child(4) img {
+    transform: rotate(180deg)
+}
+.tetris #info .help div span {
+    position: relative;
+    top: -7px;
+    padding-left: 4px;
+
+}
+.tetris #canvas{
+    background-color: #f5f0e4; 
+    border:1px solid #0d9b83;
+    width:320px;
+    height:500px;
+}
